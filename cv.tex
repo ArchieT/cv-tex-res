@@ -1,0 +1,236 @@
+% !TEX root = cv.tex
+\documentclass[a4paper]{res}
+\usepackage[T1]{fontenc}
+\usepackage[T1]{polski}
+\usepackage[utf8x]{inputenc}
+\usepackage{hyperref}
+\usepackage{helvet}
+\usepackage[super]{nth}
+\usepackage{fancyhdr}
+\usepackage{atbegshi,picture}
+\AtBeginShipout{\AtBeginShipoutUpperLeft{%
+  \put(\dimexpr\paperwidth-1.2in\relax,-1cm)
+  {\makebox[0pt][r]{Q1 2019}}%
+}}
+\AtBeginShipout{\AtBeginShipoutUpperLeft{%
+  \put(\dimexpr1.6in\relax,-1cm)
+  {\makebox[0pt][r]{Curriculum Vit\ae}}%
+}}
+\hoffset=0cm
+\usepackage[inner=3cm,marginparwidth=4cm,marginparsep=-0.5cm,top=1cm,bottom=.2cm]{geometry}
+\usepackage[inline]{enumitem}   
+\makeatletter
+% This command ignores the optional argument for itemize and enumerate lists
+\newcommand{\inlineitem}[1][]{%
+\ifnum\enit@type=\tw@
+    {\descriptionlabel{#1}}
+  \hspace{\labelsep}%
+\else
+  \ifnum\enit@type=\z@
+       \refstepcounter{\@listctr}\fi
+    \quad\@itemlabel\hspace{\labelsep}%
+\fi}
+\makeatother
+\renewcommand{\labelitemii}{→}
+\renewcommand{\labelitemiii}{•}
+% \pagestyle{plain}
+% \fancyhead[L]{Curriculum Vitae}
+% \fancyhead[R]{Q1 2019}
+% \lhead{Curriculum Vitae}
+\begin{document}
+\name{Michał Krzysztof Feiler}
+\address{\bf{Address of residence}\\
+    Dom Studencki UAM ,,Babilon''\\
+    \footnotesize{(AMU Student Dormitory ,,Babilon'')}\\
+    ul. Dożynkowa 9B/336 \\
+    61-662 Poznań, wielkopolskie, Poland
+}
+\address{\bf{Contact information}\\
+\textit{Email}: ~ \href{mailto:archiet@archiet.pl}
+{{archiet@archiet.pl}}\\
+\textit{Website}: \href{https://archiet.pl}
+{{{www.}\textbf{archiet.pl}}}\\
+\textit{Mobile}: \href{tel:+48605623668}{+48 605 623 668}\\
+\href{https://linkedin.com/in/feilermichal}
+{\itshape{linkedin.com}\slshape{/in/}\upshape{feilermichal}}
+}
+\begin{resume}
+    \section{Education}
+    \vspace{-0.05in}
+    \begin{tabbing}
+        \hspace{1.3in}\= \kill
+        2014 – 2017 \>
+        IV Liceum Ogólnokształcące
+        im. Tadeusza Kościuszki w Toruniu
+    \end{tabbing}
+    \vspace{-8pt}
+        \marginpar{\slshape\footnotesize/high school/}
+    \vspace{-8pt}
+    \hspace{1in}\textsl{na profilu matematyczno-fizyczno-informatycznym (klasa ,,uniwersytecka'')}
+    \vspace{-0.2in}
+    \begin{tabbing}
+        \hspace{1.3in}\= \kill
+        2017~/~2018 \>
+        \textsl{Nicolaus Copernicus University in Toruń}
+    \end{tabbing}\vspace{-16pt}
+    \hspace{1in}\textsl{Informatics} (unfinished \nth{1} year)
+    \vspace{-0.2in}
+    \begin{tabbing}
+        \hspace{1.3in}\= \kill
+        2018 – \textsl{2022} \>
+        \textbf{Adam Mickiewicz University} in Poznań
+    \end{tabbing}\vspace{-20pt}
+    \hspace{1in}{{Informatics}}
+    \vspace{-0.1in}
+    \section{Experience}
+    \vspace{-0.05in}
+    \begin{tabbing}
+        \hspace{2.3in}\= \hspace{2.6in}\= \kill
+        \textit{intership:} \textsl{programmer}\>
+        \textbf{DLabs} \>
+        July-August 2016\\
+        \> \textsl{Toruń, kujawsko-pomorskie}
+        \> June 2017
+    \end{tabbing}\vspace{-18pt}
+    \hspace{.5in}\textsl{LTSP thin\&fat terminals management automatization in a factory; Python, Docker}
+    \vspace{-0.17in}
+    \begin{tabbing}
+        \hspace{2.3in}\= \hspace{2.6in}\= \kill
+        \textit{intership:} \textsl{programmer}\>
+        \textbf{kapware.com} \>
+        July-August 2017\\
+        \> \textsl{Toruń, kujawsko-pomorskie}
+    \end{tabbing}\vspace{-18pt}
+    \hspace{.5in}\textsl{API wrappers, UI elements for ClojureScript/ReactNative (Android) apps}
+    \vspace{-0.14in}
+    \section{Languages}
+    \vspace{0.05in}
+    \textbf{English} — \textsl{intermediate}; ~ ~ French — \textsl{scarce elementary}
+    \vspace{-0.18in}
+    \section{Skills}
+    \vspace{0.1in}
+    \begin{itemize}
+        \item good grasp of functional and reactive programming
+        \item \textsc{Programming languages}
+        \vspace{-0.07in}
+        \begin{itemize}
+            \item a somewhat outdated scarce grasp of
+        \vspace{-0.05in}
+            \begin{itemize}
+                % \item Go
+                % \inlineitem Bash
+                \item Go
+                \inlineitem Java
+                \inlineitem Python
+                \inlineitem Haskell
+                \inlineitem C
+                \inlineitem Clojure / \textsl{ClojureScript}
+            \end{itemize}
+        \vspace{-0.07in}
+            \item an outdated scarce grasp of
+        \vspace{-0.05in}
+            \begin{itemize}
+                \item Dart (\& \textsl{Flutter})
+                \inlineitem Ruby
+                \inlineitem LiquidHaskell
+                \inlineitem Nim
+            \end{itemize}
+        \vspace{-0.07in}
+            \item an even more scarce grasp of
+        \vspace{-0.05in}
+            \begin{itemize}
+                \item JavaScript
+                \inlineitem PHP
+                % \inlineitem Ruby
+                \inlineitem C++
+                \inlineitem Perl5
+                \inlineitem Bash
+                \inlineitem Pascal
+            \end{itemize}
+        \vspace{-0.07in}
+            \item an yet unfulfilled interest in
+        \vspace{-0.05in}
+            \begin{itemize}
+                \item Rust
+                \inlineitem Ada/SPARK
+                \inlineitem ATS
+                \inlineitem Ocaml
+                \item Coq
+                \inlineitem Agda
+                \inlineitem Idris
+                \inlineitem Lean
+                \item Scala (\textsl{with \textit{Scalaz} library})
+                \inlineitem Kotlin
+                \inlineitem Dotty
+                \item Racket / \textsl{TypedRacket}
+                \inlineitem \textsl{Dhall}
+                \inlineitem \textsl{Nix}
+            \end{itemize}
+        \end{itemize}
+        \vspace{-0.07in}
+        \item fairly good grasp of GNU/Linux, FreeBSD, OpenBSD operating systems
+        \vspace{-0.04in}
+        \item \textsc{DataBase Management Systems} — basic grasp of:
+        \vspace{-0.07in}
+        \renewcommand{\labelitemii}{•}
+        \begin{itemize}
+            \item MySQL
+            \inlineitem Redis
+            \inlineitem MongoDB
+            (\textit{especially replication configuration})
+        \end{itemize}
+        \vspace{-0.1in}
+        \item elementary grasp of Docker platform
+        \vspace{-0.04in}
+        \item basic grasp of HTML \& CSS and even a bit of jQuery, and of Sass SCSS
+        \vspace{-0.04in}
+        \item \textsc{Version Control Systems}
+        \vspace{-0.07in}
+        \begin{itemize}
+            \item Git (\textsl{scarce intermediate})
+            \inlineitem Mercurial (\textsl{a scarce grasp})
+        \end{itemize}
+        \vspace{-0.1in}
+        \item unit testing, a basic grasp of jUnit5, an interest in TDD
+        \vspace{-0.04in}
+        \item a basic grasp of the \LaTeX~typesetting system
+        \vspace{-0.04in}
+        \item experience with IntelliJ-based IDEs (IDEA, PyCharm, CLion)
+        \vspace{-0.04in}
+        \item a basic grasp of Vim and of Spacemacs distribution of Emacs
+        \vspace{-0.04in}
+        \item a good grasp of GNU Privacy Guard (GnuPG) cryptographic software suite
+        % \vspace{0.02in}
+        \item professional experience in agile methodologies, comprehension of Scrum
+        \vspace{-0.04in}
+        \item acquaintance with the Nonviolent Communication (NVC) approach
+    \end{itemize}
+    \vspace{-0.24in}
+    \section{Activities \& societes}
+        \vspace{0.1in}
+    \begin{itemize}
+        \item a regular attendee of IT and Agile meetups since 2016
+        \vspace{-0.07in}
+        \item a member of Ingress players' community (ENL faction) since 2013
+        \vspace{-0.07in}
+        \item an active member of Mensa Poland Society since 2014
+        \vspace{-0.05in}
+        \item \footnotesize betw. 2016 and 2018, a member of {Scientific Circle of Computer Scientists (\textsl{KNI})
+        of NCU (\textsl{UMK}) in Toruń},
+        \vspace{-0.2in}
+        \begin{itemize}
+        \vspace{-0.01in}
+            \item conducting Git version control system introductory workshops
+        \vspace{-0.05in}
+            \item helping organize Clojure introductory workshops
+        \end{itemize}
+    \end{itemize}
+\end{resume}
+\vspace{-0.35in}
+\begin{center}
+    \noindent\makebox[\dimexpr\linewidth]{\rule{\dimexpr\paperwidth-3in}{0.4pt}}
+    \footnotesize
+    Zgadzam się i wyrażam zgodę bla bla bla tu wstawiać później stopkę wedle życzenia pracodawcy.\\
+    A do publikacji na stronie wyrzucić to stąd.
+\end{center}
+\end{document}
