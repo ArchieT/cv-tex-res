@@ -29,6 +29,8 @@
 %
 % Changes for LaTeX2e -- Venkat Krishnamurthy (Aug 7, 2001)
 %
+% added option a4paper that is passed to class article -- Michał K. Feiler
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % You can have multiple style options the legal options ones are:
 %
@@ -45,6 +47,8 @@
 %   11pt	use 11 point fonts instead of 10 point fonts
 %
 %   12pt	use 12 point fonts instead of 10 point fonts
+%
+%   a4paper  option a4paper passed to article class
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Commands
@@ -185,7 +189,7 @@
 %\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
 %\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
 
-\PassOptionsToClass{11pt,12pt}{article}
+\PassOptionsToClass{11pt,12pt,a4paper}{article}
 \LoadClassWithOptions{article}
 
 \newif\if@line
